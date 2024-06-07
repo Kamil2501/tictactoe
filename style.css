@@ -25,10 +25,18 @@ body {
     border-radius: 1rem;
     transition: .3s ease scale;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    border: 0;
 }
 
-.game-board>.cell[data-canplace="true"]:hover {
+.game-board>.cell>img {
+    width: 100%;
+}
+
+.game-board>.cell[data-canplace="true"]:hover,
+.game-board>.cell[data-canplace="true"]:focus {
     cursor: pointer;
     scale: 1.05;
 }
